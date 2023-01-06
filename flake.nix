@@ -8,7 +8,7 @@
     let
       leanPkgs = lean.packages.${system};
       pkg = leanPkgs.buildLeanPackage {
-        name = "MyPackage";  # must match the name of the top-level .lean file
+        name = "Poly";  # must match the name of the top-level .lean file
         src = ./.;
       };
     in {
